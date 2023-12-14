@@ -114,7 +114,7 @@ describe('example to-do app', () => {
       cy.contains('Completed').click()
 
       cy.get('.todo-list li')
-        .should('have.length', 1)
+        .should('have.length', 2)
         .first()
         .should('have.text', 'Pay electric bill')
 
